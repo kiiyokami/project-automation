@@ -21,8 +21,7 @@ echo [2] Backend
 read PROJECT_TYPE
 
 if [ $PROJECT_TYPE -eq 1 ]; then
-    echo Frontend Project
-    echo ================
+    echo Creation in progress...
     #Create project files
     touch index.html
     touch style.css
@@ -47,7 +46,9 @@ if [ $PROJECT_TYPE -eq 1 ]; then
         color: white;
     }" > style.css
     echo "console.log('Hello, World!');" > script.js
-    
+
+    echo "Successfully created the project files."
+
 elif [ $PROJECT_TYPE -eq 2 ]; then
     echo Backend Project
     echo ===============
@@ -59,8 +60,7 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
     read PROJECT_LANGUAGE
 
     if [ $PROJECT_LANGUAGE -eq 1 ]; then
-        echo TypeScript Project
-        echo =================
+        echo Creation in progress...
         #Create project files
         touch index.ts
         # Add boilerplate code
