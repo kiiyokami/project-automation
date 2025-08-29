@@ -114,3 +114,12 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
         touch go.sum
     fi
 fi
+
+echo Do you want to open the project directory in VS Code?
+echo [1] Yes
+echo [2] No
+read OPEN_PROJECT
+
+if [ $OPEN_PROJECT -eq 1 ]; then
+    code .
+fi
