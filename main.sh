@@ -121,6 +121,13 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
 
     #Compile the TypeScript files
     npx tsc
+
+    # Gitignore compiled files
+    echo "node_modules/
+        index.js
+        package-lock.json
+        dist" >.gitignore
+
     echo "Successfully created the project files."
     echo "You can now run the server using the command 'node index.js'."
     echo "The server will be running on port 3000."
