@@ -89,7 +89,8 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
   if [ $PROJECT_LANGUAGE -eq 1 ]; then
     echo Creation in progress...
     #Create project files
-    touch index.ts
+    mkdir src
+    touch src/index.ts
     # Add boilerplate typescript + express code
     echo "import express from 'express';
 
@@ -99,13 +100,15 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
   });
   app.listen(3000, () => {
     console.log('Server is running on port 3000');    
-  });" >index.ts
+  });" >src/index.ts
     
     # Add a tsconfig.json file
     touch tsconfig.json
     # Add a compilerOptions section to the tsconfig.json file
     echo "{
   \"compilerOptions\": {
+  \"outDir\": \"./dist\",
+  \"srcDir\": \"./src\",
   \"target\": \"es5\",
   \"module\": \"commonjs\",
   \"strict\": true,
