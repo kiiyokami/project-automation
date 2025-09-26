@@ -33,6 +33,10 @@ done
 # Create a new directory
 mkdir $PROJECT_NAME
 cd $PROJECT_NAME
+
+
+# Initialize the git repository
+git init
 clear
 
 # Ask for the project type
