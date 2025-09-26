@@ -109,7 +109,7 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
   \"compilerOptions\": {
   \"outDir\": \"./dist\",
   \"srcDir\": \"./src\",
-  \"target\": \"es5\",
+  \"target\": \"es2022\",
   \"module\": \"commonjs\",
   \"strict\": true,
   \"esModuleInterop\": true,
