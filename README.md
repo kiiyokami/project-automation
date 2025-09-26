@@ -21,6 +21,7 @@ The script has the following limitations:
 - It only supports creating projects of the specified type and language.
 - It does not support creating projects with multiple files or directories.
 - It does not support creating projects with specific features or dependencies.
+- Frontend projects are only static HTML files.
 
 
 ## Progress 

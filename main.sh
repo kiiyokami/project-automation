@@ -41,8 +41,8 @@ clear
 
 # Ask for the project type
 echo What type of project is this?
-echo [1] Frontend
-echo [2] Backend
+echo [1] Frontend (Static File Hosting Only)
+echo [2] Backend (For TypeScript, Python, or Golang)
 echo =========================
 read PROJECT_TYPE
 
