@@ -88,26 +88,26 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
     touch index.ts
     # Add boilerplate typescript + express code
     echo "import express from 'express';
-            const app = express();
-            app.get('/', (req: express.Request, res: express.Response) => {
-            res.send('Hello, World!');
-            });
-            app.listen(3000, () => {
-            console.log('Server is running on port 3000');    
-            });" >index.ts
+    const app = express();
+    app.get('/', (req: express.Request, res: express.Response) => {
+    res.send('Hello, World!');
+    });
+    app.listen(3000, () => {
+    console.log('Server is running on port 3000');    
+    });" >index.ts
     
     # Add a tsconfig.json file
     touch tsconfig.json
     # Add a compilerOptions section to the tsconfig.json file
     echo "{
-            \"compilerOptions\": {
-                \"target\": \"es5\",
-                \"module\": \"commonjs\",
-                \"strict\": true,
-                \"esModuleInterop\": true,
-                \"skipLibCheck\": true,
-                \"forceConsistentCasingInFileNames\": true
-            }
+    \"compilerOptions\": {
+    \"target\": \"es5\",
+    \"module\": \"commonjs\",
+    \"strict\": true,
+    \"esModuleInterop\": true,
+    \"skipLibCheck\": true,
+    \"forceConsistentCasingInFileNames\": true
+    }
         }" >tsconfig.json
     #Run npm init
     npm init -y
@@ -124,9 +124,9 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
 
     # Gitignore compiled files
     echo "node_modules/
-        index.js
-        package-lock.json
-        dist" >.gitignore
+    index.js
+    package-lock.json
+    dist" >.gitignore
 
     echo "Successfully created the project files."
     echo "You can now run the server using the command 'node index.js'."
@@ -145,10 +145,10 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
     touch main.py
     # Add boilerplate code
     echo "from flask import Flask
-            app = Flask(__name__)
-            @app.route('/')
-            def hello_world():    
-            return 'Hello, World!'" >main.py
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():    
+    return 'Hello, World!'" >main.py
     touch requirements.txt
     touch Pipfile
     touch Pipfile.lock
