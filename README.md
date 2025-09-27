@@ -1,6 +1,6 @@
-# Project Creation Automation
+# Boilerplate Creator
 
-This is a simple project creation automation script that allows you to create a new project with a specified type and language. It also includes boilerplate code for the chosen language.
+This is a simple script that allows you to create a new project with a specified type and language. It also includes boilerplate code for the chosen language.
 
 ## Usage
 
