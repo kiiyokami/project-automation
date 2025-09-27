@@ -108,7 +108,7 @@ elif [ $PROJECT_TYPE -eq 2 ]; then
     echo "{
   \"compilerOptions\": {
   \"outDir\": \"./dist\",
-  \"srcDir\": \"./src\",
+  \"rootDir\": \"./src\",
   \"target\": \"es2022\",
   \"module\": \"commonjs\",
   \"strict\": true,
