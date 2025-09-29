@@ -1,6 +1,13 @@
 # Boilerplate Creator
 
-This is a simple script that allows you to create a new project with a specified type and language. It also includes boilerplate code for the chosen language.
+This is a simple script that allows you to create a new project with a specified type and language. It utilizes the public boilerplate codes from multiple repositories.
+
+## Requirements
+- Git
+- Curl
+- Node.js (for JS)
+- Python3
+- Go compiler
 
 ## Usage
 
@@ -27,7 +34,7 @@ The script has the following limitations:
 ## Progress 
 
 - [x] TypeScript Backend
-- [ ] Python Backend
-- [ ] Golang Backend
-- [ ] Frontend
+- [x] Python Backend
+- [x] Golang Backend
+- [x] Frontend
 - [x] Git Integration
