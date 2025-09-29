@@ -111,5 +111,5 @@ else
     echo "Exiting..."
 fi
 
-read "Press any key to exit..."
+read -p "Press any key to exit..."
 exit 0
