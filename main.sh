@@ -103,3 +103,13 @@ case $template in
 esac
 
 echo "Project '$project_name' created successfully!"
+
+read -p "Open project in VSCode? (y/n): " open_in_vscode
+if [ "$open_in_vscode" == "y" ]; then
+    code .
+else
+    echo "Exiting..."
+fi
+
+read "Press any key to exit..."
+exit 0
