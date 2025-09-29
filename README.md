@@ -22,20 +22,5 @@ The script includes the following features:
 - Creates the necessary files and directories for the chosen project type and language.
 - Includes boilerplate code for the chosen language.
 
-## Limitations
-
-The script has the following limitations:
-
-- It only supports creating projects of the specified type and language.
-- It does not support creating projects with multiple files or directories.
-- It does not support creating projects with specific features or dependencies.
-- Frontend projects are only static HTML files.
-
-
-## Progress 
-
-- [x] TypeScript Backend
-- [x] Python Backend
-- [x] Golang Backend
-- [x] Frontend
-- [x] Git Integration
+## To Do
+- Fix git integration by removing remote git origins.
