@@ -3,6 +3,7 @@
 This is a simple script that allows you to create a new project with a specified type and language. It utilizes the public boilerplate codes from multiple repositories.
 
 ## Requirements
+- Linux
 - Git
 - Curl
 - Node.js (for JS)
