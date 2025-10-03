@@ -69,13 +69,23 @@ case $template in
                         git init
                         ;;
                     2)
-                        curl -fsSL https://deno.land/install.sh | sh
+                        if ! command -v deno &> /dev/null
+                        then
+                            echo "deno could not be found, installing deno"
+                            curl -fsSL https://deno.land/install.sh | sh
+                        fi
                         git clone git@github.com:lampewebdev/deno-boilerplate.git .
+                        git remote remove origin
                         git init
                         ;;
                     3)
-                        curl -fsSL https://bun.sh/install | bash
+                        if ! command -v bun &> /dev/null
+                        then
+                            echo "bun could not be found, installing bun"
+                            curl -fsSL https://bun.sh/install | bash
+                        fi
                         git clone git@github.com:RajaRakoto/bun-boilerplate.git .
+                        git remote remove origin
                         git init
                         ;;
                     *)
@@ -87,11 +97,13 @@ case $template in
             2)  
                 echo "Python Template Selected"
                 git clone git@github.com:Dugnist/python-pipenv-starter.git .
+                git remote remove origin
                 git init
                 ;;
             3)
                 echo "Go Template Selected"
                 git clone git@github.com:kazmerdome/best-ever-golang-starter.git .
+                git remote remove origin
                 git init
                 ;;
         esac
