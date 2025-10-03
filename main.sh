@@ -69,21 +69,13 @@ case $template in
                         git init
                         ;;
                     2)
-                        if ! command -v deno &> /dev/null
-                        then
-                            echo "deno could not be found, installing deno"
-                            curl -fsSL https://deno.land/install.sh | sh
-                        fi
+                        curl -fsSL https://deno.land/install.sh | sh
                         git clone git@github.com:lampewebdev/deno-boilerplate.git .
                         git remote remove origin
                         git init
                         ;;
                     3)
-                        if ! command -v bun &> /dev/null
-                        then
-                            echo "bun could not be found, installing bun"
-                            curl -fsSL https://bun.sh/install | bash
-                        fi
+                        curl -fsSL https://bun.sh/install | bash
                         git clone git@github.com:RajaRakoto/bun-boilerplate.git .
                         git remote remove origin
                         git init
