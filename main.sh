@@ -94,7 +94,7 @@ case $template in
                 ;;
             3)
                 echo "Go Template Selected"
-                git clone git@github.com:kazmerdome/best-ever-golang-starter.git .
+                git clone git@github.com:codoworks/go-boilerplate .
                 git remote remove origin
                 git init
                 ;;
